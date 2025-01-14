@@ -26,7 +26,7 @@ public class SmsController {
     private LoginCommonService loginCommonService;
 
     public SmsController() {
-        this.messageService = NurigoApp.INSTANCE.initialize("NCSQ5DRXGMXTEG6O", "0SYJPALGLRT0KZRV1ZUXPCYZAZDWYNIK", "https://api.coolsms.co.kr");
+        this.messageService = NurigoApp.INSTANCE.initialize("", "", "https://api.coolsms.co.kr");
     }
 
     // 핸드폰 번호를 받아 SMS를 발송하는 메소드
