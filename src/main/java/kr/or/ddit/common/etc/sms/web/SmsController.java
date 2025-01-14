@@ -46,7 +46,7 @@ public class SmsController {
         String temporaryPassword = generateTemporaryPassword();
     	
     	Message message = new Message();
-        message.setFrom("010-8362-4769");  // 발신자 번호 (API에 등록된 번호)
+        message.setFrom("");  // 발신자 번호 (API에 등록된 번호)
         message.setTo(phoneNumber);  // 수신자 번호
         message.setText("[WhalePort] 임시비밀번호는 " + temporaryPassword + " 입니다.");
         log.info("임시비밀번호 : " + temporaryPassword);
